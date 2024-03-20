@@ -1,4 +1,7 @@
 package com.javaex.practice4;
+
+import java.util.Scanner;
+
 // 키보드에서 정수로 된 돈의 액수를 입력 받아 50,000원권, 10,000원권, 5,000원권, 1,000원권, 500원동전,
 // 100원 동전, 50원 동전, 1원 동전 각 몇 개로 변환되는지 작성하세요.
 // (아래의 배열을 사용하여 코딩하세요.)
@@ -16,7 +19,9 @@ package com.javaex.practice4;
 public class Ex07 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
+		
+		Scanner scanner = new Scanner(System.in);
 
 	}
 
