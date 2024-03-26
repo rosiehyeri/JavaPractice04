@@ -4,8 +4,16 @@ package com.javaex.practice4;
 public class Ex06 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		char c[] = {'T','h','i','s',' ','i','s',' ','a',' ','p','e','n','c','i','l'};
 
+        // 문자열의 공백을 콤마로 변경하여 출력
+        for (int i = 0; i < c.length; i++) {
+            if (c[i] == ' ') {
+                System.out.print(',');
+            } else {
+                System.out.print(c[i]);
+            }
+        }
 	}
 
 }

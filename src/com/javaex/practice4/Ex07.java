@@ -20,13 +20,34 @@ public class Ex07 {
 
 	public static void main(String[] args) {
 
-		
 		Scanner scanner = new Scanner(System.in);
+		 // 화폐 및 동전 배열 초기화
+        int[] wonArray = {50000, 10000, 5000, 1000, 500, 100, 50, 10, 5, 1};
 
-	}
+        // 입력 받은 돈의 액수
+        System.out.print("금액을 입력하세요: ");
+        int money = scanner.nextInt();
 
+        // 입력 받은 돈을 각 화폐 단위 및 동전 단위로 변환하여 출력
+        for (int i = 0; i < wonArray.length; i++) {
+            int count = money / wonArray[i]; // 해당 화폐 단위 및 동전 단위로 변환된 개수 계산
+            money %= wonArray[i]; // 다음 화폐 단위 및 동전 단위 계산을 위해 남은 돈 갱신
+         
+        // 출력
+           if (count > 0) {
+               if (wonArray[i] >= 1000) {
+                   System.out.println(wonArray[i] + "원 짜리: " + count + "장");
+               } else {
+                   System.out.println(wonArray[i] + "원 동전: " + count + "개");
+               }
+           }
+       }
+
+        scanner.close();
+    }
 }
 
+		
 
 
 
